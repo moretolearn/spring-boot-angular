@@ -1,0 +1,18 @@
+Hell {{ title }}
+<div>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Salary</th>
+    </tr>
+    @for (item of employeesList; track $index) {
+    <tr>
+      <td>{{ item.name }}</td>
+      <td>{{ item.age }}</td>
+      <td>{{ item.salary }}</td>
+    </tr>
+    }
+  </table>
+</div>
+<router-outlet />
